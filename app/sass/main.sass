@@ -21,27 +21,100 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Arial', sans-serif
+	font-family: 'Montserrat', sans-serif
 	overflow-x: hidden
 	color: $text
 
 // Custom Sass
 
 .container
-	max-width: 700px
-	padding:
-		right: $gutter/2
-		left: $gutter/2
-	margin:
-		left: auto
-		right: auto
+	margin: 0 auto
+	margin: 0 5%
+
+.row	
+	margin: 0 auto
+	padding: 0 15%
 
 .img-responsive
 	display: block
 	max-width: 100%
-	height: auto
+	height: auto 
 
-.example-grid
+.header
+	padding-top: 32px
+	&-bgr
+		background-color: #657288
+		background-position: center 
+		background-size: cover
+		padding-top: 94px
+		padding-bottom: 198px
+	&-main
+		display: flex
+		position: relative
+		&__pack
+			position: absolute
+			padding-left: 10%
+		&__title
+			padding-left: 52%
+			color: #fff
+			padding-top: 76px
+			span
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 14px
+			&_top
+				font-family: Arial, sans-serif
+				font-size: 60px
+				
+			&_description	
+				font-size: 18px
+	
+.top-nav
+	display: flex
+	justify-content: space-between
+	margin-bottom: 29px
+	align-items: center
+.navbar-logo
+	display: flex
+	align-items: center
+	flex-direction: row
+	&__name
+		display: block
+		padding-top: 5px
+	&__description
+		margin-left: 31px
+		padding-top: 10px
+		color: $text-link
+		
+.navbar-phone
+	display: flex
+	flex-direction: column
+	text-align: right
+	&__link
+		display: block
+		color: $text
+		font-family: Arial, sans-serif
+		font-size: 20px
+		line-height: 1.5
+		&:hover
+			text-decoration: none
+			color: $text
+		&:before
+			content: ''
+			background-image: url(../img/phone.png)
+			background-size: cover
+			width: 15px
+			height: 15px
+			margin-right: 37px
+			display: inline-block
+	&__description
+		font-size: 12px
+		color: $text-link
+		line-height: 1.5
+
+
+
+/*.example-grid
 	display: grid
 	grid-gap: $gutter
 	grid-template-columns: 1fr 1fr
@@ -53,10 +126,10 @@ body
 	+media-breakpoint-down(xs)
 		display: block
 		> div
-			padding: $gutter/2 0
+			padding: $gutter/2 0 */
 	
-.example-img
-	width: 100%
+/*.example-img
+	width: 100% */
 
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+//.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	//background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
